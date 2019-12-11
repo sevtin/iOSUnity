@@ -1,4 +1,4 @@
-# iOSUnity
+### i将iOS项目UnityBridge中的Bridge文件夹，拖入Unity项目Bridge导出的Xcode工程即可测试。
 
 ### Unity端
 ```
