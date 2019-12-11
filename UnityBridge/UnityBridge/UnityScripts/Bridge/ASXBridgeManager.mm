@@ -7,7 +7,6 @@
 //
 
 #import "ASXBridgeManager.h"
-#import "UnityAppController.h"
 #import "ASXRouteManager.h"
 
 @implementation ASXBridgeManager
