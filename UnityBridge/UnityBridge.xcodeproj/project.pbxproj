@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E66FA91423A08D5B00CC112F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA91323A08D5B00CC112F /* AppDelegate.m */; };
+		E66FA91723A08D5B00CC112F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA91623A08D5B00CC112F /* SceneDelegate.m */; };
+		E66FA91A23A08D5B00CC112F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA91923A08D5B00CC112F /* ViewController.m */; };
+		E66FA91D23A08D5B00CC112F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66FA91B23A08D5B00CC112F /* Main.storyboard */; };
+		E66FA91F23A08D5C00CC112F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66FA91E23A08D5C00CC112F /* Assets.xcassets */; };
+		E66FA92223A08D5C00CC112F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E66FA92023A08D5C00CC112F /* LaunchScreen.storyboard */; };
+		E66FA92523A08D5C00CC112F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA92423A08D5C00CC112F /* main.m */; };
+		E66FA92D23A08D8F00CC112F /* ASXBridgeManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E66FA92C23A08D8F00CC112F /* ASXBridgeManager.mm */; };
+		E66FA93023A08E5200CC112F /* ASXBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA92F23A08E5200CC112F /* ASXBridgeController.m */; };
+		E66FA93323A08F1E00CC112F /* ASXRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA93223A08F1E00CC112F /* ASXRouteManager.m */; };
+		E66FA93623A090B900CC112F /* UnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA93523A090B900CC112F /* UnityAppController.m */; };
+		E66FA94223A0928400CC112F /* UnityInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = E66FA94123A0928400CC112F /* UnityInterface.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E66FA90F23A08D5B00CC112F /* UnityBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnityBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E66FA91223A08D5B00CC112F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E66FA91323A08D5B00CC112F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E66FA91523A08D5B00CC112F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E66FA91623A08D5B00CC112F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E66FA91823A08D5B00CC112F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E66FA91923A08D5B00CC112F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E66FA91C23A08D5B00CC112F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E66FA91E23A08D5C00CC112F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E66FA92123A08D5C00CC112F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E66FA92323A08D5C00CC112F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E66FA92423A08D5C00CC112F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E66FA92B23A08D8F00CC112F /* ASXBridgeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASXBridgeManager.h; sourceTree = "<group>"; };
+		E66FA92C23A08D8F00CC112F /* ASXBridgeManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ASXBridgeManager.mm; sourceTree = "<group>"; };
+		E66FA92E23A08E5200CC112F /* ASXBridgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASXBridgeController.h; sourceTree = "<group>"; };
+		E66FA92F23A08E5200CC112F /* ASXBridgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASXBridgeController.m; sourceTree = "<group>"; };
+		E66FA93123A08F1E00CC112F /* ASXRouteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASXRouteManager.h; sourceTree = "<group>"; };
+		E66FA93223A08F1E00CC112F /* ASXRouteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASXRouteManager.m; sourceTree = "<group>"; };
+		E66FA93423A090B900CC112F /* UnityAppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityAppController.h; sourceTree = "<group>"; };
+		E66FA93523A090B900CC112F /* UnityAppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityAppController.m; sourceTree = "<group>"; };
+		E66FA94023A0928400CC112F /* UnityInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityInterface.h; sourceTree = "<group>"; };
+		E66FA94123A0928400CC112F /* UnityInterface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UnityInterface.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E66FA90C23A08D5B00CC112F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E66FA90623A08D5B00CC112F = {
+			isa = PBXGroup;
+			children = (
+				E66FA91123A08D5B00CC112F /* UnityBridge */,
+				E66FA91023A08D5B00CC112F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E66FA91023A08D5B00CC112F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA90F23A08D5B00CC112F /* UnityBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E66FA91123A08D5B00CC112F /* UnityBridge */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA93723A0910700CC112F /* UnityScripts */,
+				E66FA91223A08D5B00CC112F /* AppDelegate.h */,
+				E66FA91323A08D5B00CC112F /* AppDelegate.m */,
+				E66FA91523A08D5B00CC112F /* SceneDelegate.h */,
+				E66FA91623A08D5B00CC112F /* SceneDelegate.m */,
+				E66FA91823A08D5B00CC112F /* ViewController.h */,
+				E66FA91923A08D5B00CC112F /* ViewController.m */,
+				E66FA93423A090B900CC112F /* UnityAppController.h */,
+				E66FA93523A090B900CC112F /* UnityAppController.m */,
+				E66FA91B23A08D5B00CC112F /* Main.storyboard */,
+				E66FA91E23A08D5C00CC112F /* Assets.xcassets */,
+				E66FA92023A08D5C00CC112F /* LaunchScreen.storyboard */,
+				E66FA92323A08D5C00CC112F /* Info.plist */,
+				E66FA92423A08D5C00CC112F /* main.m */,
+			);
+			path = UnityBridge;
+			sourceTree = "<group>";
+		};
+		E66FA93723A0910700CC112F /* UnityScripts */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA93923A091B900CC112F /* Callback */,
+				E66FA93823A091A700CC112F /* Bridge */,
+			);
+			path = UnityScripts;
+			sourceTree = "<group>";
+		};
+		E66FA93823A091A700CC112F /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA92B23A08D8F00CC112F /* ASXBridgeManager.h */,
+				E66FA92C23A08D8F00CC112F /* ASXBridgeManager.mm */,
+				E66FA93123A08F1E00CC112F /* ASXRouteManager.h */,
+				E66FA93223A08F1E00CC112F /* ASXRouteManager.m */,
+				E66FA92E23A08E5200CC112F /* ASXBridgeController.h */,
+				E66FA92F23A08E5200CC112F /* ASXBridgeController.m */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		E66FA93923A091B900CC112F /* Callback */ = {
+			isa = PBXGroup;
+			children = (
+				E66FA94023A0928400CC112F /* UnityInterface.h */,
+				E66FA94123A0928400CC112F /* UnityInterface.c */,
+			);
+			path = Callback;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66FA90E23A08D5B00CC112F /* UnityBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E66FA92823A08D5C00CC112F /* Build configuration list for PBXNativeTarget "UnityBridge" */;
+			buildPhases = (
+				E66FA90B23A08D5B00CC112F /* Sources */,
+				E66FA90C23A08D5B00CC112F /* Frameworks */,
+				E66FA90D23A08D5B00CC112F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnityBridge;
+			productName = UnityBridge;
+			productReference = E66FA90F23A08D5B00CC112F /* UnityBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E66FA90723A08D5B00CC112F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = saeipi;
+				TargetAttributes = {
+					E66FA90E23A08D5B00CC112F = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = E66FA90A23A08D5B00CC112F /* Build configuration list for PBXProject "UnityBridge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E66FA90623A08D5B00CC112F;
+			productRefGroup = E66FA91023A08D5B00CC112F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66FA90E23A08D5B00CC112F /* UnityBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E66FA90D23A08D5B00CC112F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66FA92223A08D5C00CC112F /* LaunchScreen.storyboard in Resources */,
+				E66FA91F23A08D5C00CC112F /* Assets.xcassets in Resources */,
+				E66FA91D23A08D5B00CC112F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E66FA90B23A08D5B00CC112F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E66FA91A23A08D5B00CC112F /* ViewController.m in Sources */,
+				E66FA91423A08D5B00CC112F /* AppDelegate.m in Sources */,
+				E66FA92523A08D5C00CC112F /* main.m in Sources */,
+				E66FA93023A08E5200CC112F /* ASXBridgeController.m in Sources */,
+				E66FA92D23A08D8F00CC112F /* ASXBridgeManager.mm in Sources */,
+				E66FA93623A090B900CC112F /* UnityAppController.m in Sources */,
+				E66FA91723A08D5B00CC112F /* SceneDelegate.m in Sources */,
+				E66FA93323A08F1E00CC112F /* ASXRouteManager.m in Sources */,
+				E66FA94223A0928400CC112F /* UnityInterface.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E66FA91B23A08D5B00CC112F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E66FA91C23A08D5B00CC112F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E66FA92023A08D5C00CC112F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E66FA92123A08D5C00CC112F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E66FA92623A08D5C00CC112F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E66FA92723A08D5C00CC112F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E66FA92923A08D5C00CC112F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UnityBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.worldopennetwork.UnityBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E66FA92A23A08D5C00CC112F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UnityBridge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.worldopennetwork.UnityBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E66FA90A23A08D5B00CC112F /* Build configuration list for PBXProject "UnityBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66FA92623A08D5C00CC112F /* Debug */,
+				E66FA92723A08D5C00CC112F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E66FA92823A08D5C00CC112F /* Build configuration list for PBXNativeTarget "UnityBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E66FA92923A08D5C00CC112F /* Debug */,
+				E66FA92A23A08D5C00CC112F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E66FA90723A08D5B00CC112F /* Project object */;
+}
