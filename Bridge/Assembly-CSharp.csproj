@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ASXBridgePanelController.cs" />
+     <Compile Include="Assets\Scripts\ASXConst.cs" />
      <Compile Include="Assets\Scripts\Handler\HttpHelper\HttpHelper.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Volumes/data/GitHub/iOSUnity/iOSUnity/Bridge/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -276,6 +277,9 @@
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
  <HintPath>/Volumes/data/GitHub/iOSUnity/iOSUnity/Bridge/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Volumes/data/GitHub/iOSUnity/iOSUnity/Bridge/Assets/Library/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/Volumes/data/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

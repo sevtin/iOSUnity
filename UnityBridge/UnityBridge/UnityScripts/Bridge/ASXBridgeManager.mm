@@ -7,20 +7,26 @@
 //
 
 #import "ASXBridgeManager.h"
-#import "ASXRouteManager.h"
+#import "ASXConst.h"
+#import "ASXMessageHandler.h"
 
 @implementation ASXBridgeManager
 
-extern "C" void _initializeBridge() {
-    
-}
-
-extern "C" void _enterBridgeController() {
-    [ASXRouteManager enterBridgeController];
-}
-
-extern "C" void _showDialog(const char *title, const char *msg) {
-    [ASXRouteManager showDialog:[NSString stringWithUTF8String:title] message:[NSString stringWithUTF8String:msg]];
+extern "C" void _iOSSendMessage(int type, int subType,const char *msg) {
+    NSDictionary *dictionary;
+    if (msg != NULL) {
+        dictionary = [ASXMessageHandler dictionaryWithJsonString:[NSString stringWithUTF8String:msg]];
+    }
+    switch (type) {
+        case Uniquely_Identified_Type_Dialog:
+            [ASXMessageHandler dialogWithSubType:subType msg:dictionary];
+            break;
+        case Uniquely_Identified_Type_EnterCtrl:
+            [ASXMessageHandler enterCtrlWithSubType:subType msg:dictionary];
+        break;
+        default:
+            break;
+    }
 }
 
 @end

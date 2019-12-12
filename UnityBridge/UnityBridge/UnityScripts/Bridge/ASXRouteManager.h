@@ -12,7 +12,7 @@
 @interface ASXRouteManager : NSObject
 
 + (void)enterBridgeController;
-+ (void)showDialog:(NSString *)title message:(NSString *)message;
++ (void)showAlertMessage:(NSDictionary *)message;
 
 @end
 

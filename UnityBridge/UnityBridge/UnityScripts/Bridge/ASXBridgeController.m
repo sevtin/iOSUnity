@@ -7,8 +7,7 @@
 //
 
 #import "ASXBridgeController.h"
-//模拟UnitySendMessage
-#include "UnityInterface.h"
+#import "ASXMessageHandler.h"
 
 @interface ASXBridgeController ()
 
@@ -18,9 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.view.backgroundColor = [UIColor whiteColor];
-
     self.title                = @"ASXBridgeController";
 
     UIButton *backUnityBtn    = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -33,7 +30,12 @@
 }
 
 - (void)onBackUnityClick {
-    UnitySendMessage("ASXBridgePanel", "iOSCallback", "{\"name\":\"Jack\",\"icon\":\"lufy.png\"}");
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"name"]             = @"saeipi";
+    dict[@"age"]              = @(24);
+    dict[@"desc"]             = @"saeipi is a good boy";
+    
+    [ASXMessageHandler sendMessageToObj:@"ASXBridgePanel" method:@"iOSCallback" message:dict];
     [self dismissViewControllerAnimated:true completion:nil];
 }
 

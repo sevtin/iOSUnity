@@ -19,6 +19,7 @@
 		E66FA93323A08F1E00CC112F /* ASXRouteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA93223A08F1E00CC112F /* ASXRouteManager.m */; };
 		E66FA93623A090B900CC112F /* UnityAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = E66FA93523A090B900CC112F /* UnityAppController.m */; };
 		E66FA94223A0928400CC112F /* UnityInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = E66FA94123A0928400CC112F /* UnityInterface.c */; };
+		E6F934B323A1D35A00934C67 /* ASXMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F934B223A1D35A00934C67 /* ASXMessageHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		E66FA93523A090B900CC112F /* UnityAppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityAppController.m; sourceTree = "<group>"; };
 		E66FA94023A0928400CC112F /* UnityInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityInterface.h; sourceTree = "<group>"; };
 		E66FA94123A0928400CC112F /* UnityInterface.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UnityInterface.c; sourceTree = "<group>"; };
+		E6F934B123A1D35A00934C67 /* ASXMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASXMessageHandler.h; sourceTree = "<group>"; };
+		E6F934B223A1D35A00934C67 /* ASXMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASXMessageHandler.m; sourceTree = "<group>"; };
+		E6F934B423A1D56300934C67 /* ASXConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASXConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +112,13 @@
 			children = (
 				E66FA92B23A08D8F00CC112F /* ASXBridgeManager.h */,
 				E66FA92C23A08D8F00CC112F /* ASXBridgeManager.mm */,
+				E6F934B123A1D35A00934C67 /* ASXMessageHandler.h */,
+				E6F934B223A1D35A00934C67 /* ASXMessageHandler.m */,
 				E66FA93123A08F1E00CC112F /* ASXRouteManager.h */,
 				E66FA93223A08F1E00CC112F /* ASXRouteManager.m */,
 				E66FA92E23A08E5200CC112F /* ASXBridgeController.h */,
 				E66FA92F23A08E5200CC112F /* ASXBridgeController.m */,
+				E6F934B423A1D56300934C67 /* ASXConst.h */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 				E66FA91A23A08D5B00CC112F /* ViewController.m in Sources */,
 				E66FA91423A08D5B00CC112F /* AppDelegate.m in Sources */,
 				E66FA92523A08D5C00CC112F /* main.m in Sources */,
+				E6F934B323A1D35A00934C67 /* ASXMessageHandler.m in Sources */,
 				E66FA93023A08E5200CC112F /* ASXBridgeController.m in Sources */,
 				E66FA92D23A08D8F00CC112F /* ASXBridgeManager.mm in Sources */,
 				E66FA93623A090B900CC112F /* UnityAppController.m in Sources */,

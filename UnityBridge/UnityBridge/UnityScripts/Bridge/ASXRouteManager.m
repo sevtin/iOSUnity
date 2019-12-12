@@ -20,8 +20,8 @@
     [target.rootViewController presentViewController:navCtrl animated:YES completion:nil];
 }
 
-+ (void)showDialog:(NSString *)title message:(NSString *)message {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
++ (void)showAlertMessage:(NSDictionary *)message {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:message[@"title"] message:message[@"desc"] delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     [alertView show];
 }
 
