@@ -47,9 +47,9 @@ public class ASXBridgePanelController : MonoBehaviour
 
     void onHttpButtonCallback(){
         string url = "https://www.binance.com/api/v1/depth?symbol=BNBBTC&limit=1000";
-        HttpHelper.Request(this, url, HttpHelper.MethodType.POST, null, HttpHelper.DownloadHanlderType.kHttpTEXT,delegate (bool isSucceed, object value) {
+        HttpHelper.Request(this, url, HttpHelper.MethodType.GET, null, HttpHelper.DownloadHanlderType.kHttpTEXT,delegate (bool isSucceed, object value) {
             // 这个object的封箱和拆箱有什么好办法吗？
-            Debug.Log(value.ToString());
+            iOSText.text = "http请求: " + value.ToString();
         });
 
         /*
