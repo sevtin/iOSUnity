@@ -3,74 +3,43 @@
 
 ### Unity端
 ```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Runtime.InteropServices;//iOS
 
-public class ASXBridgePanelController : MonoBehaviour
-{
-    public Text iOSText;
-    public Button iOSButton;
-    public Button dialogButton;
-
-    [DllImport("__Internal")] 
-    private static extern void _enterBridgeController(); //该方法为oc 中mm文件方法名称
-    [DllImport("__Internal")] 
-    private static extern void _showDialog(string title, string message);
-
-    void Start()
+    void oniOSButtonClick()
     {
-        iOSButton.onClick.AddListener(oniOSButtonClick);
-        dialogButton.onClick.AddListener(onDialogButtonClick);
-        iOSText.text = "iOS传入内容: ";
+        ASXiOSBridge.sendMessage(ASXConst.Uniquely_Identified_Type_EnterCtrl, ASXConst.Uniquely_Identified_Type_EnterCtrl_Bridge, null);
     }
 
-    // Update is called once per frame
-    void Update()
+    void onDialogButtonClick()
     {
-        
+        Dictionary<string, string> dictionary = new Dictionary<string, string>();
+        dictionary.Add("title", "提示");
+        dictionary.Add("desc", "这是Unity传入的提示文本");
+        ASXiOSBridge.sendMessage(ASXConst.Uniquely_Identified_Type_Dialog, ASXConst.Uniquely_Identified_Type_Dialog_Nomarl, dictionary);
     }
-
-    void oniOSButtonClick() {
-        _enterBridgeController();
-    }
-
-    void onDialogButtonClick() {
-        _showDialog("提示","这是Unity传入的提示文本");
-
-    }
-
-    public void iOSCallback(string json) {
-        iOSText.text = "iOS传入内容: " + json;
-    }
-}
 
 ```
 ### iOS端
 ```
-#import "ASXBridgeManager.h"
-#import "ASXRouteManager.h"
-
-@implementation ASXBridgeManager
-
-extern "C" void _initializeBridge() {
-    
+extern "C" void _iOSSendMessage(int type, int subType,const char *msg) {
+    NSDictionary *dictionary;
+    if (msg != NULL) {
+        dictionary = [ASXMessageHandler dictionaryWithJsonString:[NSString stringWithUTF8String:msg]];
+    }
+    switch (type) {
+        case Uniquely_Identified_Type_Dialog:
+            [ASXMessageHandler dialogWithSubType:subType msg:dictionary];
+            break;
+        case Uniquely_Identified_Type_EnterCtrl:
+            [ASXMessageHandler enterCtrlWithSubType:subType msg:dictionary];
+        break;
+        default:
+            break;
+    }
 }
 
-extern "C" void _enterBridgeController() {
-    [ASXRouteManager enterBridgeController];
++ (void)sendMessageToObj:(NSString* )obj method:(NSString* )method message:(NSMutableDictionary *)message {
+    UnitySendMessage([obj UTF8String], [method UTF8String], [[ASXMessageHandler stringWithJSONObject:message] UTF8String]);
 }
-
-//接收Unity消息
-extern "C" void _showDialog(const char *title, const char *msg) {
-    [ASXRouteManager showDialog:[NSString stringWithUTF8String:title] message:[NSString stringWithUTF8String:msg]];
-}
-
-//发送消息给Unity
-UnitySendMessage("ASXBridgePanel", "iOSCallback", "{\"name\":\"Jack\",\"icon\":\"lufy.png\"}");
-@end
 
 ```
 
